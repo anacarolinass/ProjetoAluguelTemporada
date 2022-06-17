@@ -2,11 +2,11 @@ package br.com.triersistemas.alugueltemporada.model;
 
 import lombok.Getter;
 
+import java.util.List;
 import java.util.UUID;
 
 @Getter
-public class AluguelModel {
+public class AdicionarImovelModel {
 
-    private UUID IdImovel;
-    private UUID IdHospedes;
+    private List<UUID> IdImovel;
 }

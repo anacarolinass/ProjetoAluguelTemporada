@@ -1,6 +1,6 @@
 package br.com.triersistemas.alugueltemporada.service.impl;
 
-import br.com.triersistemas.alugueltemporada.Domain.Hospedes;
+import br.com.triersistemas.alugueltemporada.domain.Hospedes;
 import br.com.triersistemas.alugueltemporada.exceptions.NaoExisteException;
 import br.com.triersistemas.alugueltemporada.model.HospedesModel;
 import br.com.triersistemas.alugueltemporada.repository.HospedesRepository;

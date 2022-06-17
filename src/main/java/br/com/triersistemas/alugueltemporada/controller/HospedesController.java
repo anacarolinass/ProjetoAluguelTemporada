@@ -1,6 +1,6 @@
-package br.com.triersistemas.alugueltemporada.Controller;
+package br.com.triersistemas.alugueltemporada.controller;
 
-import br.com.triersistemas.alugueltemporada.Domain.Hospedes;
+import br.com.triersistemas.alugueltemporada.domain.Hospedes;
 import br.com.triersistemas.alugueltemporada.model.HospedesModel;
 import br.com.triersistemas.alugueltemporada.service.HospedesService;
 import org.springframework.beans.factory.annotation.Autowired;

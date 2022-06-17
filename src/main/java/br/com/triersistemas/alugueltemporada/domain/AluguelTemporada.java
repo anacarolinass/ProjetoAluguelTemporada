@@ -1,4 +1,4 @@
-package br.com.triersistemas.alugueltemporada.Domain;
+package br.com.triersistemas.alugueltemporada.domain;
 
 import br.com.triersistemas.alugueltemporada.enuns.EnumTipoImovel;
 

@@ -1,13 +1,15 @@
 package br.com.triersistemas.alugueltemporada.service.impl;
 
-import br.com.triersistemas.alugueltemporada.Domain.Aluguel;
-import br.com.triersistemas.alugueltemporada.Domain.Hospedes;
+import br.com.triersistemas.alugueltemporada.domain.Aluguel;
+import br.com.triersistemas.alugueltemporada.domain.Imovel;
 import br.com.triersistemas.alugueltemporada.exceptions.NaoExisteException;
+import br.com.triersistemas.alugueltemporada.model.AdicionarImovelModel;
 import br.com.triersistemas.alugueltemporada.model.AluguelModel;
-import br.com.triersistemas.alugueltemporada.model.HospedesModel;
+import br.com.triersistemas.alugueltemporada.model.PagarImovelModel;
 import br.com.triersistemas.alugueltemporada.repository.AluguelRepository;
-import br.com.triersistemas.alugueltemporada.repository.HospedesRepository;
 import br.com.triersistemas.alugueltemporada.service.AluguelService;
+import br.com.triersistemas.alugueltemporada.service.HospedesService;
+import br.com.triersistemas.alugueltemporada.service.ImovelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +21,13 @@ public class AluguelServiceImpl implements AluguelService {
 
     @Autowired
     private AluguelRepository aluguelRepository;
+
+    @Autowired
+    private HospedesService hospedesService;
+
+    @Autowired
+    private ImovelService imovelService;
+
 
     @Override
     public List<Aluguel> consultar() {
@@ -32,22 +41,25 @@ public class AluguelServiceImpl implements AluguelService {
 
     @Override
     public Aluguel cadastrar(AluguelModel model) {
-        var aluguel = new Aluguel(model.getIdHospedes(), model.getIdImovel());
+        var hospedes = hospedesService.consultar(model.getIdHospedes());
+        var imovel = imovelService.consultar(model.getIdImovel());
+        var aluguel = new Aluguel(hospedes, imovel);
         aluguelRepository.cadastrar(aluguel);
         return aluguel;
     }
 
+
     @Override
-    public Aluguel alterar(UUID id, AluguelModel model) {
-        var aluguel = this.consultar(id);
-        aluguel.editar(model.getIdHospedes(), model.getIdImovel());
+    public Aluguel adicionarImovel(UUID id, AdicionarImovelModel model) {
+        Aluguel aluguel = this.consultar(id);
+        Imovel imovel = imovelService.consultar(model.getIdImovel());
+        aluguel.addImovel(imovel);
         return aluguel;
     }
 
     @Override
-    public Aluguel remover(UUID id) {
-        Aluguel aluguel = this.consultar(id);
-        aluguelRepository.remover(aluguel);
-        return aluguel;
+    public Aluguel pagar(UUID id, PagarImovelModel model) {
+        var aluguel = this.consultar(id);
+        return aluguel.pagar(model.getValorDiaria());
     }
 }

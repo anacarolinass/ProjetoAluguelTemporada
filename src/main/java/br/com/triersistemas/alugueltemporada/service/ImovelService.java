@@ -1,6 +1,6 @@
 package br.com.triersistemas.alugueltemporada.service;
 
-import br.com.triersistemas.alugueltemporada.Domain.Imovel;
+import br.com.triersistemas.alugueltemporada.domain.Imovel;
 import br.com.triersistemas.alugueltemporada.model.ImovelModel;
 
 import java.util.List;

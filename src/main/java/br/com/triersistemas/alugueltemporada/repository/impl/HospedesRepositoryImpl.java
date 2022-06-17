@@ -1,6 +1,6 @@
 package br.com.triersistemas.alugueltemporada.repository.impl;
 
-import br.com.triersistemas.alugueltemporada.Domain.Hospedes;
+import br.com.triersistemas.alugueltemporada.domain.Hospedes;
 import br.com.triersistemas.alugueltemporada.repository.HospedesRepository;
 import org.springframework.stereotype.Repository;
 

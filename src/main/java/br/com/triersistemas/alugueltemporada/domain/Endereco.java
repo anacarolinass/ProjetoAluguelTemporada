@@ -1,4 +1,4 @@
-package br.com.triersistemas.alugueltemporada.Domain;
+package br.com.triersistemas.alugueltemporada.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,6 +11,6 @@ public class Endereco {
 
     private String endereco;
     private int numero;
-    private String cidade;
     private String bairro;
+    private String cidade;
 }

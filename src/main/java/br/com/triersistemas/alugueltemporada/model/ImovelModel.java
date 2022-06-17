@@ -1,6 +1,6 @@
 package br.com.triersistemas.alugueltemporada.model;
 
-import br.com.triersistemas.alugueltemporada.Domain.Endereco;
+import br.com.triersistemas.alugueltemporada.domain.Endereco;
 import br.com.triersistemas.alugueltemporada.enuns.EnumTipoImovel;
 import lombok.Getter;
 

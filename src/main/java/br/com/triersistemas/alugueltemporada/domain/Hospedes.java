@@ -1,11 +1,8 @@
-package br.com.triersistemas.alugueltemporada.Domain;
+package br.com.triersistemas.alugueltemporada.domain;
 
-import java.math.BigDecimal;
 import java.util.UUID;
-import java.util.regex.*;
 import java.time.LocalDate;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 

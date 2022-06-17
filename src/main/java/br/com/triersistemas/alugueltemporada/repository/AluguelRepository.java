@@ -1,7 +1,6 @@
 package br.com.triersistemas.alugueltemporada.repository;
 
-import br.com.triersistemas.alugueltemporada.Domain.Aluguel;
-import br.com.triersistemas.alugueltemporada.Domain.Hospedes;
+import br.com.triersistemas.alugueltemporada.domain.Aluguel;
 
 import java.util.List;
 import java.util.Optional;

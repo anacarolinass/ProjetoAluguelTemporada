@@ -9,11 +9,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="alugueltemporada" />
         <module name="projeto-AluguelTemporada" />
+        <module name="ProjetoAluguelTemporada" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ProjetoAluguelTemporada" options="-parameters" />
       <module name="alugueltemporada" options="-parameters" />
       <module name="projeto-AluguelTemporada" options="-parameters" />
     </option>
