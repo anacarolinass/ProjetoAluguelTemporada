@@ -8,5 +8,5 @@ import java.util.UUID;
 @Getter
 public class AdicionarImovelModel {
 
-    private List<UUID> IdImovel;
+    private UUID IdImovel;
 }

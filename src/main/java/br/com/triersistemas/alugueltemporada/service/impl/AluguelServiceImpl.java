@@ -53,7 +53,7 @@ public class AluguelServiceImpl implements AluguelService {
     public Aluguel adicionarImovel(UUID id, AdicionarImovelModel model) {
         Aluguel aluguel = this.consultar(id);
         Imovel imovel = imovelService.consultar(model.getIdImovel());
-        aluguel.addImovel(imovel);
+        aluguel.adicionarImoveis(imovel);
         return aluguel;
     }
 

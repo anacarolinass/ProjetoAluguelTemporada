@@ -17,7 +17,7 @@ public interface AluguelService {
 
     Aluguel cadastrar(AluguelModel model);
 
-    Aluguel adicionarProdutos(UUID id, AdicionarImovelModel model);
+    Aluguel adicionarImovel(UUID id, AdicionarImovelModel model);
 
     Aluguel pagar(UUID id, PagarImovelModel model);
 

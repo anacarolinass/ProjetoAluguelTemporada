@@ -16,17 +16,16 @@ public class Aluguel {
     private UUID id;
     private Imovel imovel;
     private Hospedes hospede;
-
-    private Integer diaria;
     private BigDecimal valorDiaria;
-    private EnumStatusImovel statusImovel;
+
     private EnumStatusPedido statusPedido;
 
-    public Aluguel(final Hospedes hospede , final Imovel imovel) {
+    private EnumStatusImovel statusImovel;
+
+    public Aluguel(final Hospedes hospede, final Imovel imovel) {
         this.id = UUID.randomUUID();
         this.imovel = imovel;
         this.hospede = hospede;
-        this.diaria = diaria;
         this.valorDiaria = BigDecimal.ZERO;
     }
 
@@ -37,9 +36,17 @@ public class Aluguel {
     public void editar(UUID idHospedes, UUID idImovel) {
     }
 
+    public Aluguel adicionarImoveis(final Imovel imovel) {
+        if (EnumStatusImovel.DISPONIVEL.equals(this.statusImovel)) {
+            this.imovel = imovel;
+            this.valorDiaria = this.imovel.getValorDiaria();
+        }
+        return this;
+    }
+
 
     public Aluguel pagar(final BigDecimal valorDiaria) {
-        if (EnumStatusImovel.DISPONIVEL.equals(this.imovel) && valorDiaria.compareTo(this.valorDiaria) > 0) {
+        if (EnumStatusPedido.PENDENTE.equals(this.statusPedido) && valorDiaria.compareTo(this.valorDiaria) > 0) {
 
             this.statusPedido = EnumStatusPedido.PAGO;
 
@@ -47,6 +54,5 @@ public class Aluguel {
         return this;
     }
 
-    public void addImovel(Imovel imovel) {
-    }
+
 }

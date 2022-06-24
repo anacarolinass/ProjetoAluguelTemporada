@@ -29,8 +29,8 @@ public class AluguelController {
     }
 
     @PutMapping("/adicionar-imoveis/{id}")
-    public Aluguel adicionarProdutos(@PathVariable UUID id, @RequestBody AdicionarImovelModel model) {
-        return aluguelService.adicionarProdutos(id, model);
+    public Aluguel adicionarImovel(@PathVariable UUID id, @RequestBody AdicionarImovelModel model) {
+        return aluguelService.adicionarImovel(id, model);
     }
 
     @PutMapping("/pagar/{id}")
