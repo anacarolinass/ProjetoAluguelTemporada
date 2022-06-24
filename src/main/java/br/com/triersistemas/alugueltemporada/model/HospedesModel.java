@@ -15,12 +15,15 @@ public class HospedesModel {
     @NotNull
     @NotBlank
     private String nome;
+
     @CPF
     private String cpf;
     private String telefone;
+
     @NotNull
     @NotBlank
     private LocalDate dataNasc;
+
     @NotNull
     @NotBlank
     private Endereco endereco;

@@ -26,6 +26,9 @@ public class ImovelController {
         return imovelService.cadastrar(model);
     }
 
+    @PostMapping("/cadastrar-automatico")
+   public List<Imovel> cadastrarImovel(@RequestBody ImovelModel model){ return imovelService.cadastrarAutomatico();}
+
     @PutMapping("/alterar/{id}")
     public Imovel alterar(@PathVariable UUID id, @RequestBody ImovelModel model) {
         return imovelService.alterar(id, model);

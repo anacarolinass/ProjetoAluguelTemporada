@@ -1,6 +1,7 @@
 package br.com.triersistemas.alugueltemporada.repository.impl;
 
 import br.com.triersistemas.alugueltemporada.domain.Aluguel;
+import br.com.triersistemas.alugueltemporada.enuns.EnumStatusImovel;
 import br.com.triersistemas.alugueltemporada.repository.AluguelRepository;
 import org.springframework.stereotype.Repository;
 
@@ -27,6 +28,7 @@ public class AluguelRepositoryImpl implements AluguelRepository {
 
     @Override
     public void cadastrar(Aluguel aluguel) {
+
         LIST.add(aluguel);
     }
 

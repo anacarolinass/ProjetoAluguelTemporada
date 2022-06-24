@@ -43,7 +43,7 @@ public class AluguelServiceImpl implements AluguelService {
     public Aluguel cadastrar(AluguelModel model) {
         var hospedes = hospedesService.consultar(model.getIdHospedes());
         var imovel = imovelService.consultar(model.getIdImovel());
-        var aluguel = new Aluguel(hospedes, imovel);
+        var aluguel = new Aluguel(hospedes, imovel, model.getDias());
         aluguelRepository.cadastrar(aluguel);
         return aluguel;
     }
@@ -60,6 +60,6 @@ public class AluguelServiceImpl implements AluguelService {
     @Override
     public Aluguel pagar(UUID id, PagarImovelModel model) {
         var aluguel = this.consultar(id);
-        return aluguel.pagar(model.getValorDiaria());
+        return aluguel.pagar(model);
     }
 }

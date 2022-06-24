@@ -13,6 +13,8 @@ public interface ImovelService {
     Imovel consultar(UUID id);
 
     Imovel cadastrar(ImovelModel model);
+    
+    List<Imovel> cadastrarAutomatico();
 
     Imovel alterar(UUID id, ImovelModel model);
 

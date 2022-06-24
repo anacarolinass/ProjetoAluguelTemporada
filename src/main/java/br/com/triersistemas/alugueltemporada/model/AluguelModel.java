@@ -7,6 +7,7 @@ import java.util.UUID;
 @Getter
 public class AluguelModel {
 
-    private UUID IdImovel;
-    private UUID IdHospedes;
+    private UUID idHospedes;
+    private UUID idImovel;
+    private Integer dias;
 }

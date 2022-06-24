@@ -1,6 +1,7 @@
 package br.com.triersistemas.alugueltemporada.repository.impl;
 
 import br.com.triersistemas.alugueltemporada.domain.Imovel;
+import br.com.triersistemas.alugueltemporada.enuns.EnumStatusImovel;
 import br.com.triersistemas.alugueltemporada.repository.ImovelRepository;
 import org.springframework.stereotype.Repository;
 
@@ -15,7 +16,12 @@ public class ImovelRepositoryImpl implements ImovelRepository {
     private static final List<Imovel> LIST = new ArrayList<>();
 
     @Override
-    public List<Imovel> consultar() {return LIST;}
+    public List<Imovel> consultar() {
+        var buscarImovelDisponivel = LIST.stream().filter(aluguel -> aluguel.getStatusImovel().equals(EnumStatusImovel.DISPONIVEL)).toList();
+
+        return buscarImovelDisponivel;
+        }
+
 
 
     @Override
@@ -28,8 +34,10 @@ public class ImovelRepositoryImpl implements ImovelRepository {
         LIST.add(imovel);
     }
 
+
     @Override
     public void remover(Imovel imovel) {
+
         LIST.remove(imovel);
     }
 }
