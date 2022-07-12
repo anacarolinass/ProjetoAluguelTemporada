@@ -44,28 +44,32 @@ public class ImovelServiceImpl implements ImovelService {
 
     @Override
     public List<Imovel> cadastrarAutomatico() {
+        List<Imovel> listaImoveis = this.consultar();
 
-        List<Imovel> ListaImoveis = new ArrayList<>();
-
-        ListaImoveis.add(new Imovel("Casa do Morro", EnumTipoImovel.CASA,
+        if (listaImoveis.size() > 0) {
+            return listaImoveis;
+        } else {
+            listaImoveis = new ArrayList<>();
+        }
+        listaImoveis.add(new Imovel("Casa do Morro", EnumTipoImovel.CASA,
                 new Endereco("Rua. Idalino Manoel de Carvalho", 100, "Imbituba", "Praia do Rosa"), BigDecimal.valueOf(120.00)));
-        ListaImoveis.add(new Imovel("Casa Paraiso", EnumTipoImovel.CASA,
+        listaImoveis.add(new Imovel("Casa Paraiso", EnumTipoImovel.CASA,
                 new Endereco("Av. Porto Novo", 380, "Imbituba", "Praia do Rosa"), BigDecimal.valueOf(180.00)));
-        ListaImoveis.add(new Imovel("Apartamento Alto Padrão", EnumTipoImovel.APARTAMENTO,
+        listaImoveis.add(new Imovel("Apartamento Alto Padrão", EnumTipoImovel.APARTAMENTO,
                 new Endereco("Av. Porto Novo", 56, "Imbituba", "Praia do Rosa"), BigDecimal.valueOf(1100.00)));
-        ListaImoveis.add(new Imovel("Apartamento Nobre", EnumTipoImovel.APARTAMENTO,
+        listaImoveis.add(new Imovel("Apartamento Nobre", EnumTipoImovel.APARTAMENTO,
                 new Endereco("Rua. Caminho do Rei", 920, "Imbituba", "Praia do Rosa"), BigDecimal.valueOf(580.00)));
-        ListaImoveis.add(new Imovel("Apartamento Palace", EnumTipoImovel.APARTAMENTO,
+        listaImoveis.add(new Imovel("Apartamento Palace", EnumTipoImovel.APARTAMENTO,
                 new Endereco("Av. Porto Novo", 330, "Imbituba", "Praia do Rosa"), BigDecimal.valueOf(300.00)));
-        ListaImoveis.add(new Imovel("Cabana Sonho do Rosa", EnumTipoImovel.CABANA,
+        listaImoveis.add(new Imovel("Cabana Sonho do Rosa", EnumTipoImovel.CABANA,
                 new Endereco("Rua Beija Flor", 10, "Imbituba", "Praia do Rosa"), BigDecimal.valueOf(170.00)));
-        ListaImoveis.add(new Imovel("Cabana Gauleses", EnumTipoImovel.CABANA,
+        listaImoveis.add(new Imovel("Cabana Gauleses", EnumTipoImovel.CABANA,
                 new Endereco("Rua Clemente", 1020, "Imbituba", "Praia do Rosa"), BigDecimal.valueOf(150.00)));
 
-        for (Imovel imovel : ListaImoveis) {
+        for (Imovel imovel : listaImoveis) {
             this.imovelRepository.cadastrar(imovel);
         }
-        return ListaImoveis;
+        return listaImoveis;
 
     }
 

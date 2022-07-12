@@ -29,7 +29,7 @@ public class HospedesServiceImpl implements HospedesService {
 
     @Override
     public Hospedes cadastrar(HospedesModel model) {
-        var hospedes = new Hospedes(model.getNome(), model.getCpf(), model.getTelefone(), model.getDataNasc(),model.getEndereco());
+        var hospedes = new Hospedes(model.getNome(), model.getCpf(), model.getTelefone(), model.getDataNasc());
         hospedesRepository.cadastrar(hospedes);
         return hospedes;
     }
@@ -37,7 +37,7 @@ public class HospedesServiceImpl implements HospedesService {
     @Override
     public Hospedes alterar(UUID id, HospedesModel model) {
         var hospedes = this.consultar(id);
-        hospedes.editar(model.getNome(), model.getCpf(), model.getTelefone(), model.getDataNasc(),model.getEndereco());
+        hospedes.editar(model.getNome(), model.getCpf(), model.getTelefone(), model.getDataNasc());
         return hospedes;
     }
 
