@@ -2,7 +2,6 @@ package br.com.triersistemas.alugueltemporada.model;
 
 import lombok.Getter;
 
-import java.util.List;
 import java.util.UUID;
 
 @Getter

@@ -1,9 +1,5 @@
 package br.com.triersistemas.alugueltemporada;
 
-import br.com.triersistemas.alugueltemporada.domain.Imovel;
-import br.com.triersistemas.alugueltemporada.repository.AluguelRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

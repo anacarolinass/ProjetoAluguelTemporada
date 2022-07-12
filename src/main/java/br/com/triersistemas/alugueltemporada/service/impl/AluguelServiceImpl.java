@@ -62,4 +62,10 @@ public class AluguelServiceImpl implements AluguelService {
         var aluguel = this.consultar(id);
         return aluguel.pagar(model);
     }
+    @Override
+    public Aluguel remover(UUID id) {
+        Aluguel aluguel = this.consultar(id);
+        aluguelRepository.remover(aluguel);
+        return aluguel;
+    }
 }

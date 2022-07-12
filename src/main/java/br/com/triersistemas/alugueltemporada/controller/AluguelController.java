@@ -37,6 +37,9 @@ public class AluguelController {
     public Aluguel pagar(@PathVariable UUID id, @RequestBody PagarImovelModel model) {
         return aluguelService.pagar(id, model);
     }
-
+    @DeleteMapping("/remover/{id}")
+    public Aluguel remover(@PathVariable UUID id) {
+        return aluguelService.remover(id);
+    }
 
 }

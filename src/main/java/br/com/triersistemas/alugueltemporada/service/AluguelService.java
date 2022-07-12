@@ -1,7 +1,6 @@
 package br.com.triersistemas.alugueltemporada.service;
 
 import br.com.triersistemas.alugueltemporada.domain.Aluguel;
-import br.com.triersistemas.alugueltemporada.domain.Imovel;
 import br.com.triersistemas.alugueltemporada.model.AdicionarImovelModel;
 import br.com.triersistemas.alugueltemporada.model.AluguelModel;
 import br.com.triersistemas.alugueltemporada.model.PagarImovelModel;
@@ -22,5 +21,5 @@ public interface AluguelService {
     Aluguel pagar(UUID id, PagarImovelModel model);
 
 
-
+    Aluguel remover(UUID id);
 }

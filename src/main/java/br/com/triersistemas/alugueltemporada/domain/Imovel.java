@@ -5,7 +5,6 @@ import br.com.triersistemas.alugueltemporada.enuns.EnumTipoImovel;
 import lombok.Getter;
 
 import java.math.BigDecimal;
-import java.util.Optional;
 import java.util.UUID;
 
 

@@ -1,14 +1,11 @@
 package br.com.triersistemas.alugueltemporada.domain;
 
-import br.com.triersistemas.alugueltemporada.enuns.EnumFormaPagamento;
 import br.com.triersistemas.alugueltemporada.enuns.EnumStatusImovel;
 import br.com.triersistemas.alugueltemporada.enuns.EnumStatusPedido;
 import br.com.triersistemas.alugueltemporada.model.PagarImovelModel;
 import lombok.Getter;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.UUID;
 
 
