@@ -9,29 +9,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-@Repository
-public class HospedesRepositoryImpl implements HospedesRepository {
 
-    private static final List<Hospedes> LIST = new ArrayList<>();
+public class HospedesRepositoryImpl {
 
-    @Override
-    public List<Hospedes> consultar() {
-        return LIST;
-    }
-
-
-    @Override
-    public Optional<Hospedes> consultar(UUID id) {
-        return LIST.stream().filter(hospedes -> id.equals(hospedes.getId())).findFirst();
-    }
-
-    @Override
-    public void cadastrar(Hospedes hospedes) {
-        LIST.add(hospedes);
-    }
-
-    @Override
-    public void remover(Hospedes hospedes) {
-        LIST.remove(hospedes);
-    }
 }

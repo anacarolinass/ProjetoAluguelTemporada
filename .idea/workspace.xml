@@ -5,36 +5,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1de51808-2266-4e76-907a-df2cc9470b86" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/enuns/EnumFormaDePagamento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/db/migration/V001__hospedes.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/db/migration/V002__imovel.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/AluguelTemporadaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/AluguelTemporadaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/controller/AluguelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/controller/AluguelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/domain/Aluguel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/domain/Aluguel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/controller/HospedesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/controller/HospedesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/domain/Hospedes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/domain/Hospedes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/domain/Imovel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/domain/Imovel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/model/AdicionarImovelModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/model/AdicionarImovelModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/model/HospedesModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/model/HospedesModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/model/ImovelModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/model/ImovelModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/model/PagarImovelModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/model/PagarImovelModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/repository/impl/AluguelRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/repository/impl/AluguelRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/service/AluguelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/service/AluguelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/service/impl/AluguelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/service/impl/AluguelServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/repository/HospedesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/repository/HospedesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/repository/impl/HospedesRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/repository/impl/HospedesRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/service/HospedesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/service/HospedesService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/service/impl/HospedesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/service/impl/HospedesServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/service/impl/ImovelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/triersistemas/alugueltemporada/service/impl/ImovelServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/AluguelTemporadaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/AluguelTemporadaApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/controller/AluguelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/controller/AluguelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/domain/Aluguel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/domain/Aluguel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/domain/Hospedes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/domain/Hospedes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/domain/Imovel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/domain/Imovel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/model/AdicionarImovelModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/model/AdicionarImovelModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/model/HospedesModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/model/HospedesModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/model/ImovelModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/model/ImovelModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/model/PagarImovelModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/model/PagarImovelModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/repository/impl/AluguelRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/repository/impl/AluguelRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/service/AluguelService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/service/AluguelService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/service/impl/AluguelServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/service/impl/AluguelServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/service/impl/HospedesServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/service/impl/HospedesServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/service/impl/ImovelServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/service/impl/ImovelServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/alugueltemporada.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/AluguelTemporadaApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/config/SimpleCorsFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/controller/AluguelController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/controller/HospedesController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/controller/ImovelController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/domain/Aluguel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/domain/Endereco.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/domain/Hospedes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/domain/Imovel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/enuns/EnumFormaDePagamento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/enuns/EnumFormaPagamento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/enuns/EnumStatusImovel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/enuns/EnumStatusPedido.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/enuns/EnumTipoImovel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/exceptions/NaoExisteException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/model/AdicionarImovelModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/model/AluguelModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/model/HospedesModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/model/ImovelModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/model/PagarImovelModel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/repository/AluguelRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/repository/HospedesRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/repository/ImovelRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/repository/impl/AluguelRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/repository/impl/HospedesRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/repository/impl/ImovelRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/service/AluguelService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/service/HospedesService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/service/ImovelService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/service/impl/AluguelServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/service/impl/HospedesServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/com/triersistemas/alugueltemporada/service/impl/ImovelServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +98,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Projetos/ProjetoAluguelTemporada/src/main/java/br/com/triersistemas/alugueltemporada",
+    "last_opened_file_path": "C:/Projetos/ProjetoAluguelTemporada/resources/db/migration",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
@@ -94,12 +114,19 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projetos\ProjetoAluguelTemporada\resources\db\migration" />
+      <recent name="C:\Projetos\ProjetoAluguelTemporada" />
       <recent name="C:\Projetos\ProjetoAluguelTemporada\src\main\java\br\com\triersistemas\alugueltemporada" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="br.com.triersistemas.alugueltemporada" />
       <recent name="br.com.triersistemas.alugueltemporada.config" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install" />
+    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.AluguelTemporadaApplication">
     <configuration name="br.com.triersistemas.alugueltemporada.domain.AluguelTemporada" type="Application" factoryName="Application" nameIsGenerated="true">
@@ -161,7 +188,8 @@
       <workItem from="1656674072123" duration="23000" />
       <workItem from="1657192017525" duration="1049000" />
       <workItem from="1657540799912" duration="2056000" />
-      <workItem from="1657654533300" duration="1174000" />
+      <workItem from="1657654533300" duration="1465000" />
+      <workItem from="1657755570593" duration="5569000" />
     </task>
     <servers />
   </component>

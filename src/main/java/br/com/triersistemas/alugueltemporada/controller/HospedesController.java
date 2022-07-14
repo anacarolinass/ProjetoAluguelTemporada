@@ -18,22 +18,22 @@ public class HospedesController {
     private HospedesService hospedesService;
 
     @GetMapping("/consultar")
-    public List<Hospedes> consultar() {
+    public List<HospedesModel> consultar() {
         return hospedesService.consultar();
     }
 
     @PostMapping("/cadastrar")
-    public Hospedes cadastrar(@RequestBody HospedesModel model) {
+    public HospedesModel cadastrar(@RequestBody HospedesModel model) {
         return hospedesService.cadastrar(model);
     }
 
-    @PutMapping("/alterar/{id}")
-    public Hospedes alterar(@PathVariable UUID id, @RequestBody HospedesModel model) {
-        return hospedesService.alterar(id, model);
+    @PutMapping("/alterar")
+    public HospedesModel alterar(@RequestBody HospedesModel model) {
+        return hospedesService.alterar(model);
     }
 
     @DeleteMapping("/remover/{id}")
-    public Hospedes remover(@PathVariable UUID id) {
+    public HospedesModel remover(@PathVariable UUID id) {
         return hospedesService.remover(id);
     }
 

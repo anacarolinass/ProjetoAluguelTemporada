@@ -8,7 +8,6 @@ import java.math.BigDecimal;
 import java.util.UUID;
 
 
-@Getter
 public class Imovel {
 
     private UUID id;

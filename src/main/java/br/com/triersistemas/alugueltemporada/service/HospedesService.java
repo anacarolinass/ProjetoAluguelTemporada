@@ -8,13 +8,13 @@ import java.util.UUID;
 
 public interface HospedesService {
 
-    List<Hospedes> consultar();
+    List<HospedesModel> consultar();
 
-    Hospedes consultar(UUID id);
+    HospedesModel consultar(UUID id);
 
-    Hospedes cadastrar(HospedesModel model);
+    HospedesModel cadastrar(HospedesModel model);
 
-    Hospedes alterar(UUID id, HospedesModel model);
+    HospedesModel alterar(HospedesModel model);
 
-    Hospedes remover(UUID id);
+    HospedesModel remover(UUID id);
 }

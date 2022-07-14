@@ -18,33 +18,38 @@ public class HospedesServiceImpl implements HospedesService {
     private HospedesRepository hospedesRepository;
 
     @Override
-    public List<Hospedes> consultar() {
-        return hospedesRepository.consultar();
+    public List<HospedesModel> consultar(){
+        return hospedesRepository.findAll().stream().map(HospedesModel::new).toList();
     }
 
     @Override
-    public Hospedes consultar(UUID id) {
-        return hospedesRepository.consultar(id).orElseThrow(NaoExisteException::new);
+    public HospedesModel consultar(UUID id) {
+        return new HospedesModel(this.buscarHospedesId(id));
     }
 
     @Override
-    public Hospedes cadastrar(HospedesModel model) {
-        var hospedes = new Hospedes(model.getNome(), model.getCpf(), model.getTelefone(), model.getDataNasc(),model.getEndereco());
-        hospedesRepository.cadastrar(hospedes);
-        return hospedes;
+    public HospedesModel cadastrar(HospedesModel model) {
+        Hospedes hospedes = new Hospedes(model);
+
+        return new HospedesModel(hospedesRepository.save(hospedes));
     }
 
     @Override
-    public Hospedes alterar(UUID id, HospedesModel model) {
-        var hospedes = this.consultar(id);
-        hospedes.editar(model.getNome(), model.getCpf(), model.getTelefone(), model.getDataNasc(),model.getEndereco());
-        return hospedes;
+    public HospedesModel alterar(HospedesModel model) {
+        Hospedes hospedes = this.buscarHospedesId(model.getId());
+        hospedes.editar(model.getNome(), model.getCpf(),model.getDataNasc(),model.getTelefone());
+        return new HospedesModel(this.hospedesRepository.save(hospedes));
     }
 
+
     @Override
-    public Hospedes remover(UUID id) {
-        Hospedes hospedes = this.consultar(id);
-        hospedesRepository.remover(hospedes);
-        return hospedes;
+    public HospedesModel remover(UUID id) {
+        Hospedes hospedes = this.buscarHospedesId(id);
+        hospedesRepository.delete(hospedes);
+        return new HospedesModel(hospedes);
+    }
+
+    private Hospedes buscarHospedesId(UUID id){
+        return hospedesRepository.findById(id).orElseThrow(NaoExisteException::new);
     }
 }
